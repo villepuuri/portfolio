@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ville Puuri</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Ville Puuri.</span></h1>
+        <img src="CV_smile.jpg" alt="My profile picture" >
+        <h2 class="about__role">Embedded & Apps</h2>
+        <p class="about__desc">
+          I am a 25-year-old, soon graduating master's student focusing on embedded systems and mobile applications. 
+          My passion lies in discovering innovative solutions to enhance the world around me. 
+          Wide range of work background and an enthusiastic attitude have given me a creative mindset to think differently and to try boldly.
+        </p>
+
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Android app for an ECG sensor</h3>
+            <p class="project__description">
+              In a project work course, our group had a task to create an Android app for Suuno's Movesense ECG sensor. On my responsibility were the user experience, finding Bluetooth devices and exporting CSV-files.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Android</li>
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">Git</li>
+            </ul>
+
+          </div>
+
+          <div class="project">
+            <h3>Egg carton detector</h3>
+            <p class="project__description">
+              In an egg sorting machine was a problem: sometimes it did not put exactly 10 eggs to a carton. 
+              The fault could not be found, so I got an idea that I could built a system to count the eggs in every carton, and notify the user, if there is a problem.
+              The system is built on a Raspberry Pi, and it uses OpenCV for processing the data.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Raspberry Pi</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">OpenCV</li>
+            </ul>
+
+          </div>
+
+          <div class="project">
+            <h3>Prayer diary app</h3>
+            <p class="project__description">
+              I found out that there is not a prayre diary app in Google Play, so I decided to built one and put it there. 
+              That became quite a big project, but it taught a lot about building and publishing an app.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Flutter</li>
+              <li class="project__stack-item">Firebase</li>
+            </ul>
+
+            <a
+              href="https://play.google.com/store/apps/details?id=com.bileaminaasi.rukouspaivakirja&pli=1"
+              aria-label="the app"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">Flutter</li>
+          <li class="skills__list-item btn btn--plain">MATLAB</li>
+          <li class="skills__list-item btn btn--plain">C</li>
+          <li class="skills__list-item btn btn--plain">VBA</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:v.puuri@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+        <a
+            href="https://linkedin.com/in/villepuuri"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <a
+        href="https://github.com/rajshekhar26"
+        class="link footer__link"
+      >
+        Thanks for Raj Shekhar from this great portfolio base!
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
