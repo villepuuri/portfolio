@@ -203,13 +203,7 @@
     transform: translateY(-5px);
   }
 
-  main img {
-    width: 300px; /* Adjust the width as needed */
-    height: 350px; /* Adjust the height as needed */
-    border-radius: 5%; /*Creates a circular border for a round profile image */
-    object-fit: cover; /* Ensures the image covers the entire container */
-    margin-top: 20px;
-}
+  
   
   /*========
     layout
@@ -288,6 +282,16 @@
   .about .btn--outline {
     margin-right: 1em;
   }
+
+  .about img {
+    width: 300px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    border-radius: 5%; /*Creates a circular border for a round profile image */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px lightgray;
+
+}
   
   .projects__grid {
     max-width: 1100px;
@@ -303,6 +307,10 @@
     text-align: center;
     box-shadow: var(--shadow);
     transition: transform 0.2s linear;
+  }
+
+  .project h3 {
+    min-height: 2.4em;
   }
   
   .project:hover {
@@ -324,12 +332,21 @@
     margin: 0.5em;
     font-weight: 500;
     font-size: 0.8rem;
-    color: var(--clr-fg-alt);
+    color: var(--clr-primary);
   }
   
   .project .link--icon {
     margin-left: 0.5em;
   }
+
+  .project img {
+    width: 100%; /* Adjust the width as needed */
+    height: 23.5em; /* Adjust the height as needed */
+    border-radius: 5%; /*Creates a circular border for a round profile image */
+    object-fit: contain; /* Ensures the image covers the entire container */
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px lightgray;
+}
   
   .skills__list {
     max-width: 450px;
@@ -344,6 +361,11 @@
     margin: 0.5em;
   }
   
+  .contact .link--icon {
+    margin: 1em;
+    font-size: 1.8em;
+  }
+
   .contact {
     flex-direction: column;
   }
